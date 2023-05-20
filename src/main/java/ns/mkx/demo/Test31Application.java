@@ -30,9 +30,11 @@ public class Test31Application implements CommandLineRunner {
 		database.insertIntoDB(1,"Mercedes", "GT 63S", 689, 164586.89);
 		database.insertIntoDB(2,"BMW", "F90", 700, 120500);
 		database.insertIntoDB(3,"BMW", "F30", 420, 34599.39);
+		database.insertIntoDB(4, "toyota", "rav4", 240, 17899.89);
+		database.insertIntoDB(5, "Ford", "GT", 560, 100000.90);
 		System.out.println(database.getDBValues());
-		fileService.createFile("test");
-		fileService.writeIntoFile("test");
-		fileService.readFromFile("test");
+		fileService.createFile("test3");
+		fileService.writeIntoFile("test3");
+		fileService.readFromFile("test3");
 	}
 }
